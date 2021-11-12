@@ -6,7 +6,7 @@ import NotFoundError from './errors/notFound.error';
 require('dotenv').config();
 
 const app = express();
-app.use(express.json()); // need to do this to be able to parse body
+app.use(express.json());
 
 AWS.config.update({
   region: process.env.AWS_DEFAULT_REGION,
