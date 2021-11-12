@@ -65,7 +65,7 @@ const deleteCharacter = async (id: string) => {
 };
 
 app.get('/', (req, res) => {
-  res.send('Hello World.');
+  res.send('<h1>Hello World.</h1>');
 });
 
 app.get('/characters', async (req, res) => {
